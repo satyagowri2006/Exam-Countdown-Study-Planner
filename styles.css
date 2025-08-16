@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9fafc;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input {
+  padding: 8px;
+  margin: 5px 0;
+  width: 95%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  background: #3498db;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+.topic, .subtopic {
+  margin: 10px 0;
+  padding: 10px;
+  background: #ecf0f1;
+  border-radius: 5px;
+}
+
+#previousPlans {
+  padding: 10px;
+  background: #f4f6f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.mermaid {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
