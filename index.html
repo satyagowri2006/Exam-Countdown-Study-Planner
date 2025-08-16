@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam Countdown & Study Planner</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>📘 Exam Countdown & Study Planner</h1>
+
+    <form id="examForm">
+      <label>Exam Name:</label>
+      <input type="text" id="examName" required>
+
+      <label>Exam Date:</label>
+      <input type="date" id="examDate" required>
+
+      <div id="topicsContainer">
+        <h3>Study Topics</h3>
+        <div class="topic">
+          <input type="text" class="topicName" placeholder="Topic Name" required>
+          <input type="number" class="topicTime" placeholder="Time (hours)" required>
+          <button type="button" class="addSubtopic">+ Subtopic</button>
+          <div class="subtopics"></div>
+        </div>
+      </div>
+
+      <button type="button" id="addTopic">+ Add Topic</button>
+      <button type="submit">Generate Study Plan</button>
+    </form>
+
+    <h2>📊 Study Flowchart</h2>
+    <div class="mermaid" id="flowchart"></div>
+
+    <h2>📂 Previous Study Plans</h2>
+    <div id="previousPlans"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
